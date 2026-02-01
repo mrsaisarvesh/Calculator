@@ -227,19 +227,17 @@ export class AppComponent {
   }
 
   getButtonClass(type: ButtonType): string {
-    const baseGlass = 'rounded-2xl backdrop-blur-sm border border-white/10 shadow-lg active:shadow-sm transform active:scale-95 transition-all duration-150';
+    const baseStyle = 'rounded-2xl transform active:scale-95 transition-all duration-150 border-b-4 active:border-b-2';
     switch(type) {
       case 'operator':
-        return `bg-violet-500/40 hover:bg-violet-500/60 text-white font-medium ${baseGlass}`;
       case 'equals':
-        return `bg-violet-600/70 hover:bg-violet-600/90 text-white font-bold ${baseGlass}`;
+        return `bg-gray-200 hover:bg-white text-black font-semibold border-gray-400 active:border-gray-300 ${baseStyle}`;
       case 'special':
-        return `bg-white/20 hover:bg-white/30 text-white ${baseGlass}`;
       case 'memory':
-        return `bg-white/10 hover:bg-white/20 text-white ${baseGlass}`;
+        return `bg-gray-500 hover:bg-gray-400 text-white border-gray-700 active:border-gray-600 ${baseStyle}`;
       case 'number':
       default:
-        return `bg-white/30 hover:bg-white/40 text-white ${baseGlass}`;
+        return `bg-gray-600 hover:bg-gray-500 text-white border-gray-800 active:border-gray-700 ${baseStyle}`;
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "Glassmorphic Calculator",
-  "description": "A beautiful, modern calculator featuring a sleek glassmorphism design, a vibrant color palette, and satisfying sound effects. A delightful user interface for all your calculation needs.",
+  "name": "Monochrome Calculator",
+  "description": "A minimalist calculator with a clean, high-contrast black and white theme. Simple, elegant, and functional for a focused user experience.",
   "requestFramePermissions": []
 }
